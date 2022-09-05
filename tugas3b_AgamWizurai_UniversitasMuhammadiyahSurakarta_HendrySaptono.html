@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Tugas 3 b</title></head>
+	<body>
+		<form name="frmLatihan" method="GET" action="#">
+			<table border="0" align="center" cellpadding="15" width="40%">
+				<thead>
+					<tr bgcolor="grey">
+						<th colspan="2">Form Register Member</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr bgcolor="Grey">
+						<th colspan="2">
+							<input type="submit" name="proses" value="Kirim" />&nbsp;&nbsp;
+							<input type="reset" name="unproses" value="Batal" />
+						</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td width="25%"><label>Username</label></td>
+						<td>
+							<input type="text" name="Username" value="" placeholder="Username"
+							       size="50" maxlength="100"/>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Password</label></td>
+						<td>
+							<input type="password" value="" placeholder="Password" id="inputPassword" size="=50" maxlength="100"/>
+							<input type="checkbox" onclick="myFunction()">Tampilkan Password
+
+							<script>
+								function myFunction() {
+									var x = document.getElementById("inputPassword");
+									if (x.type === "password") {
+										x.type = "text";
+									} else {
+										x.type = "password";
+									}
+								}
+							</script>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
